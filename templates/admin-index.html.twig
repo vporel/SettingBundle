@@ -1,0 +1,18 @@
+
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content_title "Paramètres du site" %}
+
+{% block head_stylesheets %}
+    {{ encore_entry_link_tags('bundles') }}
+    {{ parent() }}
+{% endblock %}
+
+{% block head_javascript %}
+{{ parent() }}
+    {{ encore_entry_script_tags('bundles') }}
+{% endblock head_javascript %}
+
+{% block main %} 
+    <x-settings-admin></x-settings-admin>
+{% endblock %}

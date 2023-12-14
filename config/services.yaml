@@ -1,0 +1,12 @@
+services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+            
+    SettingBundle\Controller\:
+        resource: '../src/Controller/'
+        tags: ['controller.service_arguments']
+
+    SettingBundle\SettingService:
+    SettingBundle\Twig\TwigExtension:
+    
